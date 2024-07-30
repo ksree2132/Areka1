@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Areca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+      }
+      /* home-wrapper starts */
+      .home-wrapper {
+        width: 100%;
+        height: 1300px;
+        background-image: url(./areca6.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+      }
+      .nav-content {
+        width: 100%;
+        position: sticky;
+        top: 0;
+      }
+      nav {
+        height: 80px;
+        background-color: transparent;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        animation: slide 2s ease;
+      }
+
+      nav a {
+        gap: 20%;
+        font-size: 30px;
+        font-weight: 800;
+        text-shadow: 3px 3px 3px black;
+        color: whitesmoke;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        color: red;
+      }
+
+      .home-content {
+        width: 700px;
+        height: 500px;
+        background-image: linear-gradient(135deg, #1f4037 10%, #99f2c8 100%);
+        opacity: 0.7;
+        border-top-left-radius: 48%;
+        border-bottom-right-radius: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .home-content h1 {
+        color: whitesmoke;
+        font-size: 200px;
+        font-weight: 500;
+        font-family: "Nova Square", sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
+        /* font-family: 'Roboto', sans-serif; */
+        text-shadow: 10px 10px 10px rgb(4, 2, 16), -10px -10px 10px rgb(7, 7, 8);
+        animation: areca 3s 0.5s 1 normal ease-in;
+        margin-top: 13%;
+      }
+
+      .home-wrapper .home-content:hover {
+        transform: rotateZ(360deg);
+        transition: all 2s ease-in;
+      }
+      /* home-wrapper ends */
+      /* home-pictures starts */
+      .home-pictures {
+        width: 100%;
+        height: 200vh;
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+      }
+      .home-pictures img {
+        width: 500px;
+        height: 300px;
+      }
+      /* home-pictures ends */
+    </style>
+  </head>
+
+  <body>
+    <!-- home-wrapper starts -->
+    <div class="home-wrapper" id="home">
+      <div class="nav-content">
+        <nav>
+          <a href="">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./login.html">Login</a>
+          <a href="./register.html">Register</a>
+          <a href="">Contact Us</a>
+        </nav>
+      </div>
+      <!-- home-content starts -->
+      <div class="home-content">
+        <h1>Areca</h1>
+      </div>
+      <!-- home-content ends -->
+      <!-- home-pictures starts -->
+      <div class="home-pictures">
+        <div class="pic1">
+          <img src="./areca1.jpg" alt="" />
+          <img src="./areca2.jpg" alt="" />
+          <img src="./areca3.jpg" alt="" />
+        </div>
+        <div class="pic2">
+          <img src="./areca4.jpeg" alt="" />
+          <img src="./areca5.jpeg" alt="" />
+          <img src="./areca6.jpeg" alt="" />
+        </div>
+      </div>
+      <!-- home-pictures ends -->
+    </div>
+    <!-- home Wrapper ends -->
+  </body>
+</html>
